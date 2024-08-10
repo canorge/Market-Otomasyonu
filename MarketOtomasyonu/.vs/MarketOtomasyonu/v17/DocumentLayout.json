@@ -1,0 +1,132 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{33EF82EE-5598-4381-BDE4-04F30AED95DC}|MarketOtomasyonu\\MarketOtomasyonu.csproj|c:\\users\\canor\\onedrive\\belgeler\\github\\market-otomasyonu\\marketotomasyonu\\marketotomasyonu\\sifredegistir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EF82EE-5598-4381-BDE4-04F30AED95DC}|MarketOtomasyonu\\MarketOtomasyonu.csproj|solutionrelative:marketotomasyonu\\sifredegistir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EF82EE-5598-4381-BDE4-04F30AED95DC}|MarketOtomasyonu\\MarketOtomasyonu.csproj|C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\marketotomasyonu\\sifredegistir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{33EF82EE-5598-4381-BDE4-04F30AED95DC}|MarketOtomasyonu\\MarketOtomasyonu.csproj|solutionrelative:marketotomasyonu\\sifredegistir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EF82EE-5598-4381-BDE4-04F30AED95DC}|MarketOtomasyonu\\MarketOtomasyonu.csproj|C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\marketotomasyonu\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EF82EE-5598-4381-BDE4-04F30AED95DC}|MarketOtomasyonu\\MarketOtomasyonu.csproj|solutionrelative:marketotomasyonu\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EF82EE-5598-4381-BDE4-04F30AED95DC}|MarketOtomasyonu\\MarketOtomasyonu.csproj|C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\marketotomasyonu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EF82EE-5598-4381-BDE4-04F30AED95DC}|MarketOtomasyonu\\MarketOtomasyonu.csproj|solutionrelative:marketotomasyonu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EF82EE-5598-4381-BDE4-04F30AED95DC}|MarketOtomasyonu\\MarketOtomasyonu.csproj|C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\marketotomasyonu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{33EF82EE-5598-4381-BDE4-04F30AED95DC}|MarketOtomasyonu\\MarketOtomasyonu.csproj|solutionrelative:marketotomasyonu\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EF82EE-5598-4381-BDE4-04F30AED95DC}|MarketOtomasyonu\\MarketOtomasyonu.csproj|C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\marketotomasyonu\\kasiyerpaneli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EF82EE-5598-4381-BDE4-04F30AED95DC}|MarketOtomasyonu\\MarketOtomasyonu.csproj|solutionrelative:marketotomasyonu\\kasiyerpaneli.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33EF82EE-5598-4381-BDE4-04F30AED95DC}|MarketOtomasyonu\\MarketOtomasyonu.csproj|C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\marketotomasyonu\\model\\urun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33EF82EE-5598-4381-BDE4-04F30AED95DC}|MarketOtomasyonu\\MarketOtomasyonu.csproj|solutionrelative:marketotomasyonu\\model\\urun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\MarketOtomasyonu\\Form1.cs",
+              "RelativeDocumentMoniker": "MarketOtomasyonu\\Form1.cs",
+              "ToolTip": "C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\MarketOtomasyonu\\Form1.cs",
+              "RelativeToolTip": "MarketOtomasyonu\\Form1.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAqwDMAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T23:20:23.947Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SifreDegistir.cs",
+              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\MarketOtomasyonu\\SifreDegistir.cs",
+              "RelativeDocumentMoniker": "MarketOtomasyonu\\SifreDegistir.cs",
+              "ToolTip": "C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\MarketOtomasyonu\\SifreDegistir.cs",
+              "RelativeToolTip": "MarketOtomasyonu\\SifreDegistir.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAwEMAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T22:57:14.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SifreDegistir.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\MarketOtomasyonu\\SifreDegistir.cs",
+              "RelativeDocumentMoniker": "MarketOtomasyonu\\SifreDegistir.cs",
+              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\YeniMarketOtomasyonu\\MarketOtomasyonu\\MarketOtomasyonu\\SifreDegistir.cs [Tasar\u0131m]",
+              "RelativeToolTip": "..\\..\\..\\..\\Masa\u00FCst\u00FC\\YeniMarketOtomasyonu\\MarketOtomasyonu\\MarketOtomasyonu\\SifreDegistir.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T22:56:59.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "repository.cs",
+              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\MarketOtomasyonu\\repository\\repository.cs",
+              "RelativeDocumentMoniker": "MarketOtomasyonu\\repository\\repository.cs",
+              "ToolTip": "C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\MarketOtomasyonu\\repository\\repository.cs",
+              "RelativeToolTip": "MarketOtomasyonu\\repository\\repository.cs",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAowBMAAAB0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T22:55:34.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\MarketOtomasyonu\\Form1.cs",
+              "RelativeDocumentMoniker": "MarketOtomasyonu\\Form1.cs",
+              "ToolTip": "C:\\Users\\canor\\OneDrive\\Masa\u00FCst\u00FC\\YeniMarketOtomasyonu\\MarketOtomasyonu\\MarketOtomasyonu\\Form1.cs [Tasar\u0131m]",
+              "RelativeToolTip": "..\\..\\..\\..\\Masa\u00FCst\u00FC\\YeniMarketOtomasyonu\\MarketOtomasyonu\\MarketOtomasyonu\\Form1.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T22:55:21.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Urun.cs",
+              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\MarketOtomasyonu\\Model\\Urun.cs",
+              "RelativeDocumentMoniker": "MarketOtomasyonu\\Model\\Urun.cs",
+              "ToolTip": "C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\MarketOtomasyonu\\Model\\Urun.cs",
+              "RelativeToolTip": "MarketOtomasyonu\\Model\\Urun.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T10:43:25.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "KasiyerPaneli.cs",
+              "DocumentMoniker": "C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\MarketOtomasyonu\\KasiyerPaneli.cs",
+              "RelativeDocumentMoniker": "MarketOtomasyonu\\KasiyerPaneli.cs",
+              "ToolTip": "C:\\Users\\canor\\OneDrive\\Belgeler\\GitHub\\Market-Otomasyonu\\MarketOtomasyonu\\MarketOtomasyonu\\KasiyerPaneli.cs",
+              "RelativeToolTip": "MarketOtomasyonu\\KasiyerPaneli.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T10:13:51.756Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
