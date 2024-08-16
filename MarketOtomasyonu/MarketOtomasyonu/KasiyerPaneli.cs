@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,6 +22,9 @@ namespace MarketOtomasyonu
         FilterInfoCollection fic;
         VideoCaptureDevice vcd;
         DataTable dataTable = new DataTable();
+        private string lastBarcode = "";
+        private DateTime lastScanTime;
+        float toplam=0;
         public KasiyerPaneli()
         {
             InitializeComponent();
@@ -62,32 +66,146 @@ namespace MarketOtomasyonu
                 Result result = br.Decode((Bitmap)pictureBox1.Image);
                 if(result != null) 
                 {
-                    txt_barkod.Text = result.ToString();
-                    if (!string.IsNullOrEmpty(txt_barkod.Text))
+                    string currentBarcode = result.ToString();
+                    if (currentBarcode != lastBarcode || (DateTime.Now - lastScanTime).TotalSeconds > 2)
                     {
-                        Urun urun = cont.urunGetir(txt_barkod.Text);
-                        
+                        txt_barkod.Text = currentBarcode;
+                        lastBarcode = currentBarcode;
+                        lastScanTime = DateTime.Now;
 
-                        if (dataTable.Columns.Count == 0)
+                        if (!string.IsNullOrEmpty(txt_barkod.Text))
                         {
-                            dataTable.Columns.Add("Ad", typeof(string));
-                            dataTable.Columns.Add("Fiyat", typeof(decimal));
+                            Urun urun = cont.urunGetir(txt_barkod.Text);
+                            if(urun != null)
+                            {
+                                if (dataTable.Columns.Count == 0)
+                                {
+                                    dataTable.Columns.Add("Ad", typeof(string));
+                                    dataTable.Columns.Add("Fiyat", typeof(decimal));
+                                }
+                                DataRow newRow = dataTable.NewRow();
+                                newRow["Ad"] = urun.ad;
+                                newRow["Fiyat"] = urun.fiyat;
+                                dataTable.Rows.Add(newRow);
+                                dataGridView1.DataSource = dataTable;
+                                toplam += urun.fiyat;
+                                lbl_toplam.Text = toplam.ToString();
+                                SoundPlayer sound=new SoundPlayer();
+                                sound.SoundLocation = "barkod.wav";
+                                sound.Play(); 
+                            }
+
+                          
                         }
-                            DataRow newRow = dataTable.NewRow();
-                            newRow["Ad"] = urun.ad;
-                            newRow["Fiyat"] = urun.fiyat;
-                            dataTable.Rows.Add(newRow);
-                
-                        dataGridView1.DataSource=dataTable;
                     }
+                  
+                   
                 }
                 
             }
         }
 
+
+        private void numberClick(object sender,EventArgs e)
+        {
+            Button btn= (Button)sender;
+            txt_barkod.Text = txt_barkod.Text + btn.Text;
+        }
+
+        private void enterClick(object sender,EventArgs e)
+        {
+            if (txt_barkod.Text != null)
+            {
+                Urun urun = cont.urunGetir(txt_barkod.Text);
+                if (urun != null)
+                {
+                    if (dataTable.Columns.Count == 0)
+                    {
+                        dataTable.Columns.Add("Ad", typeof(string));
+                        dataTable.Columns.Add("Fiyat", typeof(decimal));
+                    }
+                    DataRow newRow = dataTable.NewRow();
+                    newRow["Ad"] = urun.ad;
+                    newRow["Fiyat"] = urun.fiyat;
+                    dataTable.Rows.Add(newRow);
+                    dataGridView1.DataSource = dataTable;
+                    toplam += urun.fiyat;
+                    lbl_toplam.Text = toplam.ToString();
+                    SoundPlayer sound = new SoundPlayer();
+                    sound.SoundLocation = "barkod.wav";
+                    sound.Play();
+                }
+            }
+        }
+
+        private void ClearClick(object sender,EventArgs e)
+        {
+            txt_barkod.Text = " ";
+        }
+
+        public void PanelClear()
+        {
+            lbl_toplam.Text = "";
+            txt_barkod.Text = "";
+            dataGridView1.DataSource = null;
+        }
         private void lbl_saniye_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_barkod_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_nakit_Click(object sender, EventArgs e)
+        {
+            NakitÖdeme no = new NakitÖdeme(toplam,this);
+            no.ShowDialog();
+        }
+
+        private void btn_cikis_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
+        }
+
+        private void btn_kredi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_puan_Click(object sender, EventArgs e)
+        {
+            PuanKullan pk = new PuanKullan(toplam,this);
+            pk.ShowDialog();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void UrunSil(object sender,EventArgs e)
+        {
+            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+            {
+                toplam -= float.Parse(row.Cells[1].Value.ToString());
+                lbl_toplam.Text = toplam.ToString();
+                dataGridView1.Rows.Remove(row);
+            }
         }
     }
 }

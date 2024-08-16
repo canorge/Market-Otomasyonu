@@ -76,6 +76,12 @@
       <DependentUpon>KasiyerPaneli.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Urun.cs" />
+    <Compile Include="NakitÖdeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NakitÖdeme.Designer.cs">
+      <DependentUpon>NakitÖdeme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="repository\repository.cs" />
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KasiyerPaneli.resx">
       <DependentUpon>KasiyerPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NakitÖdeme.resx">
+      <DependentUpon>NakitÖdeme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -21,3 +21,5 @@ C:\Users\canor\OneDrive\Masaüstü\YeniMarketOtomasyonu\MarketOtomasyonu\MarketO
 C:\Users\canor\OneDrive\Masaüstü\YeniMarketOtomasyonu\MarketOtomasyonu\MarketOtomasyonu\bin\Debug\zxing.xml
 C:\Users\canor\OneDrive\Masaüstü\YeniMarketOtomasyonu\MarketOtomasyonu\MarketOtomasyonu\bin\Debug\zxing.presentation.xml
 C:\Users\canor\OneDrive\Masaüstü\YeniMarketOtomasyonu\MarketOtomasyonu\MarketOtomasyonu\obj\Debug\MarketOt.38151669.Up2Date
+C:\Users\canor\OneDrive\Masaüstü\YeniMarketOtomasyonu\MarketOtomasyonu\MarketOtomasyonu\obj\Debug\MarketOtomasyonu.NakitÖdeme.resources
+C:\Users\canor\OneDrive\Masaüstü\YeniMarketOtomasyonu\MarketOtomasyonu\MarketOtomasyonu\obj\Debug\MarketOtomasyonu.PuanKullan.resources
