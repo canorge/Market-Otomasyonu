@@ -8,6 +8,6 @@ namespace MarketOtomasyonu
 {
     public enum LoginStatue
     {
-        basarili,basarisiz,eksikParametre,farkli
+        basarili,basarisiz,eksikParametre,farkli,bosAlan,ayniParametre,ayniEmail,ayniKullaniciAdi,urunYok
     }
 }

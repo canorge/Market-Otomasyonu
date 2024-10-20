@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SifreDegistir));
             this.lbl_kullaniciadi = new System.Windows.Forms.Label();
             this.txt_kullaniciadi = new System.Windows.Forms.TextBox();
             this.lbl_hotmail = new System.Windows.Forms.Label();
@@ -36,15 +37,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_dogrulamakodu = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_dogrula = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_yenisifre2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_yenisifre = new System.Windows.Forms.TextBox();
-            this.btn_dogrula = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_kullaniciadi
@@ -118,11 +121,21 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txt_hotmail);
             this.groupBox1.Controls.Add(this.txt_kullaniciadi);
-            this.groupBox1.Location = new System.Drawing.Point(45, 33);
+            this.groupBox1.Location = new System.Drawing.Point(47, 42);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(444, 296);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
+            // 
+            // btn_dogrula
+            // 
+            this.btn_dogrula.Location = new System.Drawing.Point(248, 237);
+            this.btn_dogrula.Name = "btn_dogrula";
+            this.btn_dogrula.Size = new System.Drawing.Size(180, 35);
+            this.btn_dogrula.TabIndex = 4;
+            this.btn_dogrula.Text = "Doğrula";
+            this.btn_dogrula.UseVisualStyleBackColor = true;
+            this.btn_dogrula.Click += new System.EventHandler(this.btn_dogrula_Click);
             // 
             // groupBox2
             // 
@@ -164,6 +177,7 @@
             this.txt_yenisifre2.Name = "txt_yenisifre2";
             this.txt_yenisifre2.Size = new System.Drawing.Size(180, 22);
             this.txt_yenisifre2.TabIndex = 1;
+            this.txt_yenisifre2.TextChanged += new System.EventHandler(this.txt_yenisifre2_TextChanged);
             // 
             // label2
             // 
@@ -181,22 +195,25 @@
             this.txt_yenisifre.Name = "txt_yenisifre";
             this.txt_yenisifre.Size = new System.Drawing.Size(180, 22);
             this.txt_yenisifre.TabIndex = 0;
+            this.txt_yenisifre.TextChanged += new System.EventHandler(this.txt_yenisifre_TextChanged);
             // 
-            // btn_dogrula
+            // pictureBox1
             // 
-            this.btn_dogrula.Location = new System.Drawing.Point(248, 237);
-            this.btn_dogrula.Name = "btn_dogrula";
-            this.btn_dogrula.Size = new System.Drawing.Size(180, 35);
-            this.btn_dogrula.TabIndex = 4;
-            this.btn_dogrula.Text = "Doğrula";
-            this.btn_dogrula.UseVisualStyleBackColor = true;
-            this.btn_dogrula.Click += new System.EventHandler(this.btn_dogrula_Click);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(56, 38);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // SifreDegistir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1141, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "SifreDegistir";
@@ -206,6 +223,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -227,5 +245,6 @@
         private System.Windows.Forms.TextBox txt_yenisifre;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_dogrula;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

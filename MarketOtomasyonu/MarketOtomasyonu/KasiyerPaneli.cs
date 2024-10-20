@@ -25,6 +25,7 @@ namespace MarketOtomasyonu
         private string lastBarcode = "";
         private DateTime lastScanTime;
         float toplam=0;
+        private List<Urun> UrunListesi;
         public KasiyerPaneli()
         {
             InitializeComponent();
@@ -32,6 +33,7 @@ namespace MarketOtomasyonu
 
         private void KasiyerPaneli_Load(object sender, EventArgs e)
         {
+            UrunListesi = new List<Urun>();
              fic = new FilterInfoCollection(FilterCategory.VideoInputDevice);
             vcd = new VideoCaptureDevice(fic[0].MonikerString);
             vcd.NewFrame += Vcd_NewFrame;
@@ -90,13 +92,16 @@ namespace MarketOtomasyonu
                                 dataGridView1.DataSource = dataTable;
                                 toplam += urun.fiyat;
                                 lbl_toplam.Text = toplam.ToString();
+                                UrunListesi.Add(urun);
                                 SoundPlayer sound=new SoundPlayer();
                                 sound.SoundLocation = "barkod.wav";
-                                sound.Play(); 
+                                sound.Play();
+                                
                             }
 
                           
                         }
+                       
                     }
                   
                    
@@ -127,15 +132,18 @@ namespace MarketOtomasyonu
                     DataRow newRow = dataTable.NewRow();
                     newRow["Ad"] = urun.ad;
                     newRow["Fiyat"] = urun.fiyat;
+
                     dataTable.Rows.Add(newRow);
                     dataGridView1.DataSource = dataTable;
                     toplam += urun.fiyat;
                     lbl_toplam.Text = toplam.ToString();
+                    UrunListesi.Add(urun);
                     SoundPlayer sound = new SoundPlayer();
                     sound.SoundLocation = "barkod.wav";
                     sound.Play();
                 }
             }
+            
         }
 
         private void ClearClick(object sender,EventArgs e)
@@ -171,8 +179,14 @@ namespace MarketOtomasyonu
 
         private void btn_nakit_Click(object sender, EventArgs e)
         {
-            NakitÖdeme no = new NakitÖdeme(toplam,this);
-            no.ShowDialog();
+            cont.urunOdemesiYap(UrunListesi);
+            lastBarcode = null;
+            lastScanTime = DateTime.MinValue;
+            dataTable.Clear();
+            toplam = 0;
+            dataGridView1.DataSource = " ";
+            lbl_toplam.Text = " ";
+            txt_barkod.Text = " ";
         }
 
         private void btn_cikis_Click(object sender, EventArgs e)
@@ -189,8 +203,7 @@ namespace MarketOtomasyonu
 
         private void btn_puan_Click(object sender, EventArgs e)
         {
-            PuanKullan pk = new PuanKullan(toplam,this);
-            pk.ShowDialog();
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -32,9 +32,11 @@ namespace MarketOtomasyonu
             user result = cont.girisYap(txt_kullaniciadi.Text, txt_sifre.Text);
             if(result.girisDurumu==LoginStatue.basarili)
             {
-                if(result.yetki=="admin")
+                if(result.yetki=="Admin")
                 {
-                    //admin sayfasına
+                    AdminPaneli ad=new AdminPaneli();
+                    ad.Show();
+                    this.Hide();
                 }
                 else
                 {
@@ -51,6 +53,31 @@ namespace MarketOtomasyonu
             {
                 MessageBox.Show("Kullanıcıadı veya şifre hatalı","Hata",MessageBoxButtons.OK, MessageBoxIcon.Error);   
             }
+        }
+
+        private void lbl_sifre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_kullaniciadi_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_kullaniciadi_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_sifre_TextChanged(object sender, EventArgs e)
+        {
+            txt_sifre.UseSystemPasswordChar = true;
         }
     }
 }

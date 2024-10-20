@@ -42,7 +42,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(85, 51);
+            this.pictureBox1.Location = new System.Drawing.Point(83, 33);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(154, 144);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -52,36 +52,42 @@
             // lbl_kullaniciadi
             // 
             this.lbl_kullaniciadi.AutoSize = true;
-            this.lbl_kullaniciadi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_kullaniciadi.Location = new System.Drawing.Point(281, 60);
+            this.lbl_kullaniciadi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_kullaniciadi.Location = new System.Drawing.Point(263, 45);
             this.lbl_kullaniciadi.Name = "lbl_kullaniciadi";
-            this.lbl_kullaniciadi.Size = new System.Drawing.Size(120, 20);
+            this.lbl_kullaniciadi.Size = new System.Drawing.Size(139, 25);
             this.lbl_kullaniciadi.TabIndex = 1;
             this.lbl_kullaniciadi.Text = "Kullanıcı Adı:";
+            this.lbl_kullaniciadi.Click += new System.EventHandler(this.lbl_kullaniciadi_Click);
             // 
             // txt_kullaniciadi
             // 
-            this.txt_kullaniciadi.Location = new System.Drawing.Point(408, 60);
+            this.txt_kullaniciadi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_kullaniciadi.Location = new System.Drawing.Point(408, 42);
             this.txt_kullaniciadi.Name = "txt_kullaniciadi";
-            this.txt_kullaniciadi.Size = new System.Drawing.Size(142, 22);
+            this.txt_kullaniciadi.Size = new System.Drawing.Size(142, 30);
             this.txt_kullaniciadi.TabIndex = 0;
+            this.txt_kullaniciadi.TextChanged += new System.EventHandler(this.txt_kullaniciadi_TextChanged);
             // 
             // lbl_sifre
             // 
             this.lbl_sifre.AutoSize = true;
-            this.lbl_sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_sifre.Location = new System.Drawing.Point(346, 104);
+            this.lbl_sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_sifre.Location = new System.Drawing.Point(338, 92);
             this.lbl_sifre.Name = "lbl_sifre";
-            this.lbl_sifre.Size = new System.Drawing.Size(55, 20);
+            this.lbl_sifre.Size = new System.Drawing.Size(64, 25);
             this.lbl_sifre.TabIndex = 1;
             this.lbl_sifre.Text = "Şifre:";
+            this.lbl_sifre.Click += new System.EventHandler(this.lbl_sifre_Click);
             // 
             // txt_sifre
             // 
-            this.txt_sifre.Location = new System.Drawing.Point(408, 104);
+            this.txt_sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_sifre.Location = new System.Drawing.Point(408, 87);
             this.txt_sifre.Name = "txt_sifre";
-            this.txt_sifre.Size = new System.Drawing.Size(142, 22);
+            this.txt_sifre.Size = new System.Drawing.Size(142, 30);
             this.txt_sifre.TabIndex = 1;
+            this.txt_sifre.TextChanged += new System.EventHandler(this.txt_sifre_TextChanged);
             // 
             // btn_girisyap
             // 
@@ -111,6 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(628, 220);
             this.Controls.Add(this.lbl_sifremiunuttum);
             this.Controls.Add(this.btn_girisyap);
@@ -120,7 +127,9 @@
             this.Controls.Add(this.lbl_kullaniciadi);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

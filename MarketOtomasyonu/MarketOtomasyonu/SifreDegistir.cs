@@ -100,5 +100,22 @@ namespace MarketOtomasyonu
                 MessageBox.Show("Şifre Değiştirilemedi","Hata",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
+
+        private void txt_yenisifre_TextChanged(object sender, EventArgs e)
+        {
+            txt_yenisifre.UseSystemPasswordChar = true;
+        }
+
+        private void txt_yenisifre2_TextChanged(object sender, EventArgs e)
+        {
+            txt_yenisifre2.UseSystemPasswordChar= true;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
+        }
     }
 }
